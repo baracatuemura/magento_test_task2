@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="footer">
+			<block class="Baracat\Task2\Block\GetButtonsColor" name="buttons_color" template="Baracat_Task2::buttons_color.phtml"/>
+		</referenceContainer>
+	</body>
+</page>
