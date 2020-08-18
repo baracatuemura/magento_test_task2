@@ -39,6 +39,10 @@ php bin/magento cache:clean
 ------------
 Solution
 ------------
+A new module was created to meet the customer's needs.
+
+Module features:
+
 ### 1. I created buttons color admin option using system.xml
 
 ![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image1.png)
@@ -46,13 +50,13 @@ Solution
 
 ### 2. Console command.
 
-Console command was created to save the buttons color field clear the cache after recording.
+Console command was created to validate, save the buttons color field and clear the cache after recording.
 
-*code and files:*
+**code and files:**
 
 ![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image7.png)
 
-command line
+**command line:**
 ```
 php bin/magento scandiweb:color-change --color="ff00ff" --store="1"
 ```
