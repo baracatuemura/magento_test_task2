@@ -73,9 +73,9 @@ I used the XML layout file to include these new block with CSS in the store head
 
 ![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image9.png)
 
-Template
+Template.html code
 
-![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image6.png)
+![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image10.png)
 
 ------------
 Result
