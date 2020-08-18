@@ -1,4 +1,4 @@
-# magento_test_task3
+# magento_test_task2
 
 A client wants to change the color of their buttons on a daily basis to attract more customers
 and to find the perfect one for their store. They do not want to create a ticket on a daily basis, so their IT technicians should be able to change everything without any Magento knowledge.
@@ -81,9 +81,8 @@ Template buttons_color.html code
 Result
 ------------
 
-------------
-Console command validation Screenshot.
-------------
+### Console command validation Screenshot.
+
 
 Invalid color
 ![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image5.png)
@@ -91,9 +90,8 @@ Invalid color
 Invalid ID
 ![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image6.png)
 
-------------
-Screenshot of final result
-------------
+### Screenshot of final result
+
 ![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image4.png)
 
 ------------
