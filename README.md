@@ -6,9 +6,7 @@ You need to create a Magento console command, which will have HEX color and a St
 IDs as parameters. And change the color of all buttons on that Store view into the color
 provided.
 Example of usage
-```
 ./bin/magneto scandiweb:color-change 000000 1
-```
 
 After running this command in DEV mode all the buttons on the store view with id 1 should be
 black.
@@ -47,7 +45,10 @@ Solution
 
 
 ### 2. Console command.
-code and files:
+
+Console command was created to save the buttons color field clear the cache after recording.
+
+*code and files:*
 
 ![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image7.png)
 
@@ -72,11 +73,6 @@ I used the XML layout file to include these new block with CSS in the store head
 ------------
 Result
 ------------
-To change buttons color use this console command below:
-
-```
-php bin/magento scandiweb:color-change --color="ff00ff" --store="1"
-```
 
 ------------
 Console command validation Screenshot.
@@ -91,4 +87,13 @@ Invalid ID
 ------------
 Screenshot of final result
 ------------
-![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task3/master/_info/image4.png)
+![alt text](https://raw.githubusercontent.com/baracatuemura/magento_test_task2/master/_info/image4.png)
+
+------------
+Test
+------------
+To change buttons color use this console command below:
+
+```
+php bin/magento scandiweb:color-change --color="ff00ff" --store="1"
+```
