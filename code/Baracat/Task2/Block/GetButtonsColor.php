@@ -9,6 +9,7 @@ namespace Baracat\Task2\Block;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Store\Model\ScopeInterface;
+use Magento\Framework\View\Element\Template\Context;
 
 class GetButtonsColor extends \Magento\Framework\View\Element\Template
 {
@@ -23,7 +24,7 @@ class GetButtonsColor extends \Magento\Framework\View\Element\Template
      */
     public function __construct(
         ScopeConfigInterface $scopeConfig,
-        \Magento\Framework\View\Element\Template\Context $context,
+        Context $context,
         array $data = []
     ) {
         $this->scopeConfig = $scopeConfig;
