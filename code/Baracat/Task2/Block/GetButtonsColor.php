@@ -9,12 +9,10 @@ namespace Baracat\Task2\Block;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
-
 class GetButtonsColor extends \Magento\Framework\View\Element\Template
 {
     private $scopeConfig;
-    const XML_PATH_COLOR = 'buttons_color/buttons_color/btn_color';
-
+    const XML_PATH_COLOR = "buttons_color/buttons_color/btn_color";
 
     /**
      * Constructor
@@ -34,32 +32,9 @@ class GetButtonsColor extends \Magento\Framework\View\Element\Template
     /**
      * @return string
      */
-    public function buttons_color()
+    public function getColor()
     {
-        $storeId = $this->_storeManager->getStore()->getStoreId();
-       echo  $color =  $this->scopeConfig->getValue(self::XML_PATH_COLOR, $scope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
-        $this->_storeManager->getStore()->getStoreId());
-
-        return __('storeId: %1 | scope: %2 |color: %3', $storeId , $scope, $color );
-        
+        $color = $this->scopeConfig->getValue(self::XML_PATH_COLOR, \Magento\Store\Model\ScopeInterface::SCOPE_STORE, $this->_storeManager->getStore()->getStoreId());
+        return  $color;
     }
-
-    /**
-     * @return string
-     */
-    public function get_color()
-    {
-        $color = str_replace("#", "",$this->scopeConfig->getValue(self::XML_PATH_COLOR, $scope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
-            $this->_storeManager->getStore()->getStoreId()));
-
-        if(strlen($color)>2){
-            return  '#'.$color;
-        }else {
-            return false;
-        }
-        
-    }
-
-
-
 }

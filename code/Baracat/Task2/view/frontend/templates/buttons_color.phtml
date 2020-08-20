@@ -1,26 +1,22 @@
 <?php
 /**
- * @var $block \Baracat\Task2\Block\Buttons_color
+ * @var $block \Baracat\Task2\Block\ButtonsColor
  */
+
+$color = $block->getColor();
+if($color){
+    echo "
+    <style>
+    .action.primary,
+    .action.primary:hover,
+    .action.primary:focus, 
+    .action.primary:active,
+    .block-promo .button.more,
+    .block-promo .button.more:hover,
+    .minicart-wrapper .action.showcart .counter.qty	{
+        background-color: #$color;
+        border: 1px solid #$color;
+    }
+    </style>";
+}
 ?>
-
-	<?php 
-	$color = $block->get_color();
-	if($color){
-		echo "
-		<style>
-		.action.primary,
-		.action.primary:hover,
-		.action.primary:focus, 
-		.action.primary:active,
-		.block-promo .button.more,
-		.block-promo .button.more:hover,
-		.minicart-wrapper .action.showcart .counter.qty	{
-	    	background-color: $color;
-	    	border: 1px solid $color;
-	    }
-	    </style>";
-	}
-
-
-    	?>
