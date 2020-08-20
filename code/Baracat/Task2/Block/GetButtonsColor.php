@@ -8,6 +8,7 @@ declare(strict_types=1);
 namespace Baracat\Task2\Block;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
+use Magento\Store\Model\ScopeInterface;
 
 class GetButtonsColor extends \Magento\Framework\View\Element\Template
 {
@@ -34,7 +35,7 @@ class GetButtonsColor extends \Magento\Framework\View\Element\Template
      */
     public function getColor()
     {
-        $color = $this->scopeConfig->getValue(self::XML_PATH_COLOR, \Magento\Store\Model\ScopeInterface::SCOPE_STORE, $this->_storeManager->getStore()->getStoreId());
+        $color = $this->scopeConfig->getValue(self::XML_PATH_COLOR, ScopeInterface::SCOPE_STORE, $this->_storeManager->getStore()->getStoreId());
         return  $color;
     }
 }
